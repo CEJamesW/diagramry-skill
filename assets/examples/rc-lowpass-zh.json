@@ -1,0 +1,53 @@
+{
+  "type": "circuit",
+  "output": {
+    "format": "svg",
+    "canvas": "svg",
+    "theme": {
+      "bgcolor": "white",
+      "color": "black",
+      "unit": 3.0,
+      "fontsize": 14,
+      "font": "Microsoft YaHei,SimHei,DengXian,SimSun"
+    }
+  },
+  "items": [
+    {
+      "id": "vin",
+      "kind": "SourceV",
+      "direction": "up",
+      "label": "输入"
+    },
+    {
+      "kind": "Resistor",
+      "direction": "right",
+      "label": "电阻 R1\n10k"
+    },
+    {
+      "id": "vout",
+      "kind": "Dot",
+      "label": "输出",
+      "label_loc": "right"
+    },
+    {
+      "kind": "Capacitor",
+      "direction": "down",
+      "label": "电容 C1\n10nF"
+    },
+    {
+      "kind": "Ground",
+      "label": "地",
+      "label_loc": "bottom"
+    },
+    {
+      "kind": "Line",
+      "direction": "left",
+      "tox_ref": "vin.start"
+    },
+    {
+      "kind": "Line",
+      "direction": "up",
+      "toy_ref": "vin.start"
+    }
+  ]
+}

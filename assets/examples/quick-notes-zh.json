@@ -1,0 +1,126 @@
+{
+  "type": "shapes",
+  "output": {
+    "format": "png",
+    "dpi": 180,
+    "theme": {
+      "bgcolor": "#fffdf8",
+      "color": "#1f2937",
+      "unit": 3.0,
+      "fontsize": 14,
+      "font": "Microsoft YaHei,SimHei,DengXian,SimSun"
+    }
+  },
+  "items": [
+    {
+      "kind": "rect",
+      "xy": [0.5, 0.5],
+      "w": 10.8,
+      "h": 7.4,
+      "fill": "#fffdf8",
+      "color": "#d6d3d1",
+      "lw": 1.2,
+      "cornerradius": 0.12
+    },
+    {
+      "kind": "rect",
+      "xy": [0.9, 0.9],
+      "w": 3.8,
+      "h": 1.0,
+      "label": "工作简记：项目周会",
+      "fill": "#fee2e2",
+      "color": "#dc2626",
+      "lw": 1.8,
+      "fontsize": 14
+    },
+    {
+      "kind": "text",
+      "xy": [1.0, 2.55],
+      "text": "1. 本周目标：首页改版先出 MVP\n2. 风险：接口联调、需求变更\n3. 决策：先收口范围，再补增强项",
+      "align": ["left", "center"],
+      "fontsize": 11.5,
+      "font": "Microsoft YaHei,SimHei,DengXian,SimSun",
+      "color": "#111827"
+    },
+    {
+      "kind": "rect",
+      "xy": [6.8, 1.0],
+      "w": 3.7,
+      "h": 1.2,
+      "label": "先收口范围",
+      "fill": "#dbeafe",
+      "color": "#2563eb",
+      "lw": 1.8
+    },
+    {
+      "kind": "arrow",
+      "points": [[8.65, 2.2], [8.65, 3.0]],
+      "color": "#2563eb",
+      "lw": 1.8
+    },
+    {
+      "kind": "rect",
+      "xy": [6.9, 3.0],
+      "w": 3.5,
+      "h": 1.0,
+      "label": "再拆负责人",
+      "fill": "#eff6ff",
+      "color": "#60a5fa",
+      "lw": 1.4
+    },
+    {
+      "kind": "arrow",
+      "points": [[8.65, 4.0], [8.65, 4.8]],
+      "color": "#2563eb",
+      "lw": 1.8
+    },
+    {
+      "kind": "rect",
+      "xy": [6.8, 4.8],
+      "w": 3.9,
+      "h": 1.0,
+      "label": "同步风险与依赖",
+      "fill": "#eff6ff",
+      "color": "#60a5fa",
+      "lw": 1.4,
+      "fontsize": 12
+    },
+    {
+      "kind": "arrow",
+      "points": [[8.65, 5.8], [8.65, 6.55]],
+      "color": "#2563eb",
+      "lw": 1.8
+    },
+    {
+      "kind": "rect",
+      "xy": [6.7, 6.55],
+      "w": 4.0,
+      "h": 0.95,
+      "label": "最后定下周动作",
+      "fill": "#eff6ff",
+      "color": "#60a5fa",
+      "lw": 1.4
+    },
+    {
+      "kind": "circle",
+      "center": [4.6, 4.7],
+      "radius": 0.65,
+      "label": "重点",
+      "fill": "#fef3c7",
+      "color": "#d97706",
+      "lw": 2.0,
+      "fontsize": 16
+    },
+    {
+      "kind": "rect",
+      "xy": [0.9, 6.45],
+      "w": 3.1,
+      "h": 1.05,
+      "label": "会议纪要卡",
+      "fill": "#fff1f2",
+      "color": "#e11d48",
+      "lw": 1.8,
+      "fontsize": 15
+    }
+  ]
+}

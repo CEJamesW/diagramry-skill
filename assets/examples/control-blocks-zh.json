@@ -1,0 +1,63 @@
+{
+  "type": "blocks",
+  "output": {
+    "format": "svg",
+    "canvas": "svg",
+    "theme": {
+      "bgcolor": "white",
+      "color": "black",
+      "unit": 3.0,
+      "fontsize": 14,
+      "font": "Microsoft YaHei,SimHei,DengXian,SimSun"
+    }
+  },
+  "nodes": [
+    {
+      "id": "collect",
+      "kind": "Terminal",
+      "xy": [0.0, 0.0],
+      "anchor": "W",
+      "label": "需求整理"
+    },
+    {
+      "id": "breakdown",
+      "kind": "Box",
+      "xy": [3.2, 0.0],
+      "anchor": "W",
+      "w": 2.8,
+      "h": 1.3,
+      "label": "任务拆解"
+    },
+    {
+      "id": "execute",
+      "kind": "Box",
+      "xy": [7.3, 0.0],
+      "anchor": "W",
+      "w": 2.9,
+      "h": 1.3,
+      "label": "执行推进"
+    },
+    {
+      "id": "review",
+      "kind": "Box",
+      "xy": [11.5, 0.0],
+      "anchor": "W",
+      "w": 3.0,
+      "h": 1.3,
+      "label": "验收复盘"
+    },
+    {
+      "id": "sync",
+      "kind": "Terminal",
+      "xy": [15.6, 0.0],
+      "anchor": "W",
+      "label": "结果同步"
+    }
+  ],
+  "connectors": [
+    { "kind": "Arrow", "from": "collect.E", "to": "breakdown.W" },
+    { "kind": "Arrow", "from": "breakdown.E", "to": "execute.W" },
+    { "kind": "Arrow", "from": "execute.E", "to": "review.W" },
+    { "kind": "Arrow", "from": "review.E", "to": "sync.W" }
+  ]
+}

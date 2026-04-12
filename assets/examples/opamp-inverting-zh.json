@@ -1,0 +1,101 @@
+{
+  "type": "circuit",
+  "output": {
+    "format": "svg",
+    "canvas": "svg",
+    "theme": {
+      "bgcolor": "white",
+      "color": "black",
+      "unit": 2.8,
+      "fontsize": 14,
+      "font": "Microsoft YaHei,SimHei,DengXian,SimSun"
+    }
+  },
+  "items": [
+    {
+      "id": "vin",
+      "kind": "SourceV",
+      "at": [0.0, 0.0],
+      "direction": "up",
+      "label": "输入 Vin",
+      "label_loc": "left"
+    },
+    {
+      "kind": "Ground",
+      "label": "地",
+      "label_loc": "bottom"
+    },
+    {
+      "kind": "Line",
+      "at_ref": "vin.end",
+      "direction": "right",
+      "length": 1.1
+    },
+    {
+      "id": "rin",
+      "kind": "Resistor",
+      "direction": "right",
+      "length": 2.6,
+      "label": "Rin\n10k"
+    },
+    {
+      "id": "sum",
+      "kind": "Dot",
+      "label": "求和点",
+      "label_loc": "top"
+    },
+    {
+      "id": "op",
+      "kind": "Opamp",
+      "at": [7.2, 2.0],
+      "anchor": "center"
+    },
+    {
+      "kind": "Line",
+      "at_ref": "sum.center",
+      "to_ref": "op.in1"
+    },
+    {
+      "kind": "Line",
+      "at_ref": "op.in2",
+      "direction": "left",
+      "length": 1.2
+    },
+    {
+      "kind": "Ground",
+      "label": "地",
+      "label_loc": "bottom"
+    },
+    {
+      "id": "fb_up",
+      "kind": "Line",
+      "at_ref": "op.out",
+      "direction": "up",
+      "length": 1.8
+    },
+    {
+      "id": "rf",
+      "kind": "Resistor",
+      "direction": "left",
+      "to_ref": "sum.center",
+      "label": "Rf\n100k"
+    },
+    {
+      "kind": "Line",
+      "direction": "down",
+      "toy_ref": "sum.center"
+    },
+    {
+      "kind": "Line",
+      "at_ref": "op.out",
+      "direction": "right",
+      "length": 1.6
+    },
+    {
+      "id": "vout",
+      "kind": "Dot",
+      "label": "输出 Vout",
+      "label_loc": "right"
+    }
+  ]
+}

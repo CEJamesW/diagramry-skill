@@ -1,0 +1,4 @@
+interface:
+  display_name: "Diagramry.skill"
+  short_description: "Draw notes, workflows, circuits, and diagrams"
+  default_prompt: "Use $diagramry to render a clean note card, workflow, life/work diagram, circuit, or structured sketch as SVG/PNG."
