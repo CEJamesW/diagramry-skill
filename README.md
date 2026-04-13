@@ -9,10 +9,8 @@
 [![Codex Skill](https://img.shields.io/badge/Codex-Skill-black.svg)](https://openai.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**图示工坊.skill** 是一个基于 `SchemDraw 0.22` 的 Codex skill 与渲染器项目。  
+**图示工坊.skill** 是一个基于 `SchemDraw 0.22` 的中文友好 skill 与渲染器项目。  
 它用于把结构化信息稳定地输出为 `SVG` 或 `PNG` 图像，适合工作简记、生活规划、流程梳理、思维导图，以及规整的技术示意图。
-
-[Spec 说明](references/spec.md)
 
 </div>
 
@@ -54,7 +52,7 @@
 
 ![任务推进流程图](./assets/previews/control-blocks-zh.png)
 
-**生活思维导图**
+**思维导图**
 
 ![生活思维导图](./assets/previews/mindmap-study-zh.png)
 
@@ -76,7 +74,7 @@
 - 不依赖临时脚本拼接
 - 示例图与示例 spec 一一对应，仓库内可直接重渲染
 
-## 仓库开发与调试
+## 开发与调试
 
 ```powershell
 py -3.11 -m venv .venv
@@ -84,7 +82,7 @@ py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r .\requirements.txt
 ```
 
-## 本地渲染示例
+## 渲染示例
 
 渲染工作简记图：
 
